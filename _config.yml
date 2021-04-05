@@ -1,37 +1,46 @@
-title: Hello, world! I'm David Freeman
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+title: Jordan's Blog
+description: "Jordan's Projects Blog"
 permalink: ':title/'
-baseurl: "/flexible-jekyll" # the subpath of your site, e.g. /blog
+baseurl: "/jordan-wei-taylor.github.io" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 site-twitter: #if your site has a twitter account, enter it here
 
 # Author Settings
-author: David Freeman # add your name
-author-img: david-freeman.jpg # add your photo
-about-author: I am a web developer focusing on front-end development. Always hungry to keep learning. # add description
+author: Jordan Taylor # add your name
+author-img: profile.jpeg # add your photo
+about-author: >
+    PhD Student Documenting My Journey In Machine Learning.
+    <br><br>
+    To learn Machine Learning and Reinforcement Learning, check out my educational website <a href="https://central-ai.readthedocs.io/en/latest" target="_blank" style="text-decoration:none">central-ai</a>.
 social-twitter: # add your Twitter handle
 social-facebook: # add your Facebook handle
-social-github: artemsheludko # add your Github handle
-social-linkedin: # add your Linkedin handle
-social-email: # add your Email address
+social-github: jordan-wei-taylor # add your Github handle
+social-linkedin: jordan-wei-taylor # add your Linkedin handle
+social-email: jt2006@bath.ac.uk
 
 # Disqus
-discus-identifier: mr-brown # add your discus identifier
+discus-identifier:  # add your discus identifier
 
 # Tracker
 analytics: # Google Analytics
 
 # Build Settings
 markdown: kramdown
+
+kramdown:
+    auto_ids: true
+    highlighter: rouge
+    syntax_highlighter_opts:
+        block:
+            line_numbers: true
+            
 plugins:
   - jekyll-sitemap
   - jekyll-paginate
   - jemoji
 
-paginate: 8
+paginate: 5
 paginate_path: "/page/:num"
 
+ntruncate: 30
 exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
